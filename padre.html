@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .video-container {
+      text-align: center;
+      
+    }
+
+    .video-container img {
+      cursor: pointer;
+      max-width: 300px;
+      height: 200px;
+    }
+
+    video {
+      display: none;
+    }
+
+    .description {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #555;
+      
+    }
+    h1{
+        color:red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Videos solo para noymi</h1>
+
+  <div class="video-container">
+    <img src="1.jpg" alt="Vista Previa Video 1" onclick="playVideo('video1')">
+    <video id="video1" controls controlsList="nodownload">
+      <source src="video.MOV" type="video/mp4">
+      Tu navegador no soporta el formato de video.
+    </video>
+    <p class="description">Mira !Padre follando a su hija. y lo hace venir. </p>
+  </div>
+
+  <div class="video-container">
+    <img src="padre2.jpg" alt="Vista Previa Video 2" onclick="playVideo('video2')">
+    <video id="video2" controls>
+      <source src="2.mp4" type="video/mp4">
+      Tu navegador no soporta el formato de video.
+    </video>
+    <p class="description">Padre folla a su hija en su habitación en 4 </p>
+  </div>
+
+  <!-- Repite para los otros videos -->
+  <br>
+  <br>
+    <Center>  <a href="inicio.html">Regresar al inicio</a></Center>
+
+  <script>
+    function playVideo(videoId) {
+      const video = document.getElementById(videoId);
+      const image = video.previousElementSibling;
+      const description = video.nextElementSibling;
+      video.style.display = "block";
+      image.style.display = "none";
+      description.style.display = "none";
+      video.play();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #a7545a;
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 600px;
+}
+
+button {
+  background-color: #4caf50;
+position: relative;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  top: 20px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: red;
+}
+h1{
+    position: relative;
+    text-align: center;
+}
+h2{
+    position: relative;
+    text-align: center;
+}
+h3{
+    position: relative;
+    text-align: center;
+}
